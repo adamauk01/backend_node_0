@@ -1,6 +1,10 @@
 const getHomePage = (req, res) => {
-  res.render('sample.ejs');
+  res.render('home.ejs');
+}
+const postCreateUser = (req, res) => {
+
 }
 module.exports = {
-  getHomePage
+  getHomePage,
+  postCreateUser
 }
