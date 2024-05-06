@@ -5,7 +5,6 @@ const configViewEngine = require('./config/viewEngine');
 const webRoutes = require('./routes/web.js');
 const port = process.env.PORT || 8888;
 const hostname = process.env.HOST_NAME || 'localhost';
-const connection = require('./config/database.js')
 
 //config req.body
 app.use(express.json());
