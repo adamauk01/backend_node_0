@@ -4,10 +4,12 @@ const {
   getHomePage,
   postCreateUser,
   getCreatePage,
-  getUpdatePage
+  getUpdatePage,
+  postUpdateUser
 } = require('../controllers/homeController.js');
 router.get('/', getHomePage);
 router.get('/create', getCreatePage);
 router.get('/update/:id', getUpdatePage)
 router.post('/create-user', postCreateUser)
+router.post('/update-user', postUpdateUser);
 module.exports = router;
